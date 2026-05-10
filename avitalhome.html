@@ -1,73 +1,109 @@
+```html
 <!doctype html>
 <html lang="he">
   <head>
     <meta charset="UTF-8" />
     <title>אלבומי ברכות לאירועים</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <style>
       body {
         font-family: "Assistant", sans-serif;
         direction: rtl;
         text-align: center;
+        margin: 0;
+        padding: 20px;
       }
+
       table {
         width: 100%;
         border-collapse: collapse;
-        margin: 0 auto; /* Center the table itself */
-        text-align: center; /* Center table content */
+        margin: 0 auto 40px auto;
+        text-align: center;
       }
+
       td {
-        padding: 10px;
+        padding: 15px;
+        vertical-align: top;
       }
-      .image-container {
-        display: flex;
-        justify-content: center;
-      }
+
       img {
-        width: 200px; /* Set a fixed width for all images */
+        width: 180px;
         height: auto;
         max-width: 100%;
-        margin-top: 20px; /* Add margin to the bottom of all images */
+        margin-top: 20px;
+        transition: 0.3s;
       }
+
+      img:hover {
+        transform: scale(1.03);
+      }
+
       .smaller-image {
-        width: 150px; /* Set a smaller width for specific images */
+        width: 150px;
       }
+
       .smaller-image2 {
-        width: 130px; /* Set a smaller width for specific images */
+        width: 130px;
       }
+
       h1,
       h2,
       h3 {
         color: #7ebdc2;
       }
+
+      p {
+        line-height: 1.7;
+      }
+
       .clickable-image {
         cursor: pointer;
       }
+
+      @media (max-width: 900px) {
+        table,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        img {
+          width: 220px;
+        }
+      }
     </style>
+
     <script>
       function navigateParent(url) {
         window.parent.location.href = url
       }
     </script>
   </head>
+
   <body>
     <h1>אלבומי ברכות לאירועים</h1>
-    <h2>בעיצוב ייחודי ומקורי, בשילוב תמונות וברכות אישיות.</h2>
+
+    <h2>
+      בעיצוב ייחודי ומקורי, בשילוב תמונות וברכות אישיות.
+    </h2>
 
     <p>
-      <strong
-        >מה יותר מרגש משמחה משפחתית?<br />
-        מה יותר כיף ממזכרת מקורית ממנה?</strong
-      >
+      <strong>
+        מה יותר מרגש משמחה משפחתית?<br />
+        מה יותר כיף ממזכרת מקורית ממנה?
+      </strong>
     </p>
 
     <p>
       שמחות הן אירוע נדיר ומשמח בחיינו.<br />
-      הולדת תינוק, יום הולדת, הגעה למצווה, פרישה מהעבודה או כל ארוע משמעותי
-      אחר...<br />
+      הולדת תינוק, יום הולדת, הגעה למצווה, פרישה מהעבודה
+      או כל ארוע משמעותי אחר...<br />
       ומה יותר חשוב מליקוט הברכות שנכתבו מכל הלב של הקרובים ביותר?
     </p>
 
@@ -83,160 +119,243 @@
       אביטל
     </p>
 
+    <!-- בת מצווה -->
+
     <table>
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%AA-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new goldi.jpg"
               alt="אלבום בת מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בת מצווה</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%AA-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new rose.jpg"
               alt="אלבום בת מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בת מצווה</p>
         </td>
+
       </tr>
+
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%AA-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new lilac.jpg"
               alt="אלבום בת מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בת מצווה</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%AA-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://avital1712.github.io/avital/תכלת.jpg"
               alt="אלבום בת מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בת מצווה</p>
         </td>
+
       </tr>
-</table>
-<table>
+    </table>
+
+    <!-- בר מצווה -->
+
+    <table>
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%A8-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new star.jpg"
               alt="אלבום בר מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בר מצווה</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%91%D7%A8-%D7%9E%D7%A6%D7%95%D7%95%D7%94-1"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new sky.jpg"
               alt="אלבום בר מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בר מצווה</p>
         </td>
-        </table>
-      <table>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%97%D7%A0%D7%95%D7%AA/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%95%D7%95%D7%99%D7%A0%D7%A8"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://avital1712.github.io/avital/בר מצווה ווינר.jpg"
               alt="אלבום בר מצווה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום בר מצווה</p>
         </td>
+
+        <!-- אלבום חדש -->
+
+        <td>
+          <a
+            href="PASTE_PRODUCT_LINK_HERE"
+            target="_blank"
+          >
+            <img
+              src="PASTE_IMAGE_LINK_HERE"
+              alt="אלבום בר מצווה"
+            />
+          </a>
+
+          <p>אלבום בר מצווה</p>
+        </td>
+
       </tr>
-      </table>
-      <table>
+    </table>
+
+    <!-- ליולדת -->
+
+    <table>
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%9C%D7%99%D7%95%D7%9C%D7%93%D7%AA"
             target="_blank"
-            ><img
+          >
+            <img
               class="smaller-image"
               src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת copy.jpg"
-              alt="אלבום בת מצווה"
-          /></a>
+              alt="אלבום ליולדת לבן"
+            />
+          </a>
+
           <p>אלבום ליולדת לבן</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%9C%D7%99%D7%95%D7%9C%D7%93%D7%AA"
             target="_blank"
-            ><img
+          >
+            <img
               class="smaller-image"
               src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת.jpg"
-              alt="אלבום בר מצווה"
-          /></a>
+              alt="אלבום ליולדת לבת"
+            />
+          </a>
+
           <p>אלבום ליולדת לבת</p>
         </td>
+
       </tr>
+
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%9C%D7%92%D7%91%D7%A8"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new man.jpg"
               alt="אלבום לגבר"
-          /></a>
+            />
+          </a>
+
           <p>אלבום לגבר</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%90%D7%9C%D7%91%D7%95%D7%9D-%D7%9C%D7%90%D7%A9%D7%94"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://yuvaleizik.github.io/website/images/new woman.jpg"
               alt="אלבום לאשה"
-          /></a>
+            />
+          </a>
+
           <p>אלבום לאשה</p>
         </td>
+
       </tr>
 
       <tr>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%94%D7%96%D7%9E%D7%A0%D7%94-%D7%9C%D7%90%D7%A8%D7%95%D7%A2"
             target="_blank"
-            ><img
+          >
+            <img
               class="smaller-image"
               src="https://yuvaleizik.github.io/website/images/דגם ליאן הזמנה לבת מצווה.jpg"
-              alt="אלבום בר מצווה"
-          /></a>
+              alt="עיצוב הזמנה לבת מצווה"
+            />
+          </a>
+
           <p>עיצוב הזמנה לבת מצווה</p>
         </td>
+
         <td>
           <a
             href="https://www.mybookalbum.co.il/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%94%D7%96%D7%9E%D7%A0%D7%94-%D7%9C%D7%90%D7%A8%D7%95%D7%A2"
             target="_blank"
-            ><img
+          >
+            <img
               class="smaller-image2"
               src="https://yuvaleizik.github.io/website/images/דגם ריף הזמנה לבר מצווה.jpg"
-              alt="אלבום בר מצווה"
-          /></a>
+              alt="עיצוב הזמנה לבר מצווה"
+            />
+          </a>
+
           <p>עיצוב הזמנה לבר מצווה</p>
         </td>
+
       </tr>
+
     </table>
 
     <h3>
@@ -244,5 +363,7 @@
       <br />
       שלחו לנו וואצאפ ונשמח לדבר איתכם.
     </h3>
+
   </body>
 </html>
+```
