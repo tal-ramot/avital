@@ -1,357 +1,400 @@
-```html
+
 <!doctype html>
-<html lang="he">
-  <head>
-    <meta charset="UTF-8" />
-    <title>אלבומי ברכות לאירועים</title>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>אלבומי ברכות לאירועים</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <style>
-      body {
-        font-family: "Assistant", sans-serif;
-        direction: rtl;
-        text-align: center;
-        margin: 0;
-        padding: 20px;
+  <style>
+    body {
+      font-family: "Assistant", sans-serif;
+      direction: rtl;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto 40px auto;
+      text-align: center;
+    }
+
+    td {
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    img {
+      width: 180px;
+      height: auto;
+      max-width: 100%;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    .smaller-image {
+      width: 150px;
+    }
+
+    .smaller-image2 {
+      width: 130px;
+    }
+
+    h1, h2, h3 {
+      color: #7ebdc2;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    /* אלבומי בת מצווה */
+    .bat-mitzvah-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 auto 40px;
+      align-items: start;
+    }
+
+    .bat-mitzvah-grid .album {
+      min-width: 0;
+      padding: 0 8px;
+    }
+
+    .bat-mitzvah-grid img {
+      width: 180px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .bat-mitzvah-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      table {
+      table, tr, td {
+        display: block;
         width: 100%;
-        border-collapse: collapse;
-        margin: 0 auto 40px auto;
-        text-align: center;
-      }
-
-      td {
-        padding: 15px;
-        vertical-align: top;
+        box-sizing: border-box;
       }
 
       img {
-        width: 180px;
-        height: auto;
-        max-width: 100%;
-        margin-top: 20px;
-        transition: 0.3s;
+        width: 220px;
       }
 
-      img:hover {
-        transform: scale(1.03);
+      .bat-mitzvah-grid img {
+        width: 220px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .bat-mitzvah-grid {
+        gap: 8px;
       }
 
-      .smaller-image {
-        width: 150px;
+      .bat-mitzvah-grid .album {
+        padding: 0 2px;
       }
+    }
+  </style>
+</head>
 
-      .smaller-image2 {
-        width: 130px;
-      }
+<body>
 
-      h1,
-      h2,
-      h3 {
-        color: #7ebdc2;
-      }
+  <h1>אלבומי ברכות לאירועים</h1>
 
-      p {
-        line-height: 1.7;
-      }
+  <h2>
+    בעיצוב ייחודי ומקורי, בשילוב תמונות וברכות אישיות.
+  </h2>
 
-      @media (max-width: 900px) {
-        table,
-        tr,
-        td {
-          display: block;
-          width: 100%;
-        }
+  <p>
+    <strong>
+      מה יותר מרגש משמחה משפחתית?<br />
+      מה יותר כיף ממזכרת מקורית ממנה?
+    </strong>
+  </p>
 
-        img {
-          width: 220px;
-        }
-      }
-    </style>
-  </head>
+  <p>
+    שמחות הן אירוע נדיר ומשמח בחיינו.<br />
+    הולדת תינוק, יום הולדת, הגעה למצווה, פרישה מהעבודה
+    או כל ארוע משמעותי אחר...<br />
+    ומה יותר חשוב מליקוט הברכות שנכתבו מכל הלב של הקרובים ביותר?
+  </p>
 
-  <body>
-    <h1>אלבומי ברכות לאירועים</h1>
+  <p>
+    אלבום אישי בעיצוב מקורי בשילוב תמונות,<br />
+    הוא הדרך הטובה ביותר לשמור על הזיכרון<br />
+    מהרגעים היפים והחשובים בחיים.
+  </p>
 
-    <h2>
-      בעיצוב ייחודי ומקורי, בשילוב תמונות וברכות אישיות.
-    </h2>
+  <p>
+    אשמח לעמוד לרשותכם ולהתאים לכם את האלבום המושלם עבורכם.<br />
+    באהבה גדולה,<br />
+    אביטל
+  </p>
 
-    <p>
-      <strong>
-        מה יותר מרגש משמחה משפחתית?<br />
-        מה יותר כיף ממזכרת מקורית ממנה?
-      </strong>
-    </p>
+  <!-- בת מצווה - חמישה אלבומים -->
 
-    <p>
-      שמחות הן אירוע נדיר ומשמח בחיינו.<br />
-      הולדת תינוק, יום הולדת, הגעה למצווה, פרישה מהעבודה
-      או כל ארוע משמעותי אחר...<br />
-      ומה יותר חשוב מליקוט הברכות שנכתבו מכל הלב של הקרובים ביותר?
-    </p>
+  <section class="bat-mitzvah-grid" aria-label="אלבומי בת מצווה">
 
-    <p>
-      אלבום אישי בעיצוב מקורי בשילוב תמונות,<br />
-      הוא הדרך הטובה ביותר לשמור על הזיכרון<br />
-      מהרגעים היפים והחשובים בחיים.
-    </p>
-
-    <p>
-      אשמח לעמוד לרשותכם ולהתאים לכם את האלבום המושלם עבורכם.<br />
-      באהבה גדולה,<br />
-      אביטל
-    </p>
-
-    <!-- בת מצווה -->
-
-    <table>
-      <tr>
-
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
-            target="_blank"
-          >
-            <img
-              src="https://yuvaleizik.github.io/website/images/new goldi.jpg"
-              alt="אלבום בת מצווה"
-            />
-          </a>
-
-          <p>אלבום בת מצווה</p>
-        </td>
-
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
-            target="_blank"
-          >
-            <img
-              src="https://yuvaleizik.github.io/website/images/new rose.jpg"
-              alt="אלבום בת מצווה"
-            />
-          </a>
-
-          <p>אלבום בת מצווה</p>
-        </td>
-
-      </tr>
-
-      <tr>
-
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
-            target="_blank"
-          >
-            <img
-              src="https://yuvaleizik.github.io/website/images/new lilac.jpg"
-              alt="אלבום בת מצווה"
-            />
-          </a>
-
-          <p>אלבום בת מצווה</p>
-        </td>
-
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
-            target="_blank"
-          >
-            <img
-              src="https://avital1712.github.io/avital/תכלת.jpg"
-              alt="אלבום בת מצווה"
-            />
-          </a>
-
-          <p>אלבום בת מצווה</p>
-        </td>
-
-      </tr>
-    </table>
-
-    <!-- בר מצווה -->
-
-<table>
-  <tr>
-
-    <td>
+    <!-- גולדי -->
+    <div class="album">
       <a
-        href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+        href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
-          src="https://yuvaleizik.github.io/website/images/new star.jpg"
-          alt="אלבום בר מצווה"
+          src="https://yuvaleizik.github.io/website/images/new goldi.jpg"
+          alt="אלבום בת מצווה גולדי"
         />
       </a>
+      <p>אלבום בת מצווה</p>
+    </div>
 
-      <p>אלבום בר מצווה</p>
-    </td>
-
-    <td>
+    <!-- רוז -->
+    <div class="album">
       <a
-        href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+        href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
-          src="https://yuvaleizik.github.io/website/images/new sky.jpg"
-          alt="אלבום בר מצווה"
+          src="https://yuvaleizik.github.io/website/images/new rose.jpg"
+          alt="אלבום בת מצווה רוז"
         />
       </a>
+      <p>אלבום בת מצווה</p>
+    </div>
 
-      <p>אלבום בר מצווה</p>
-    </td>
-
-    <td>
+    <!-- לילך -->
+    <div class="album">
       <a
-        href="https://www.mybookalbum.co.il/חנות/אלבום-ווינר"
+        href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
-          src="https://avital1712.github.io/avital/בר מצווה ווינר.jpg"
-          alt="אלבום בר מצווה"
+          src="https://yuvaleizik.github.io/website/images/new lilac.jpg"
+          alt="אלבום בת מצווה לילך"
         />
       </a>
+      <p>אלבום בת מצווה</p>
+    </div>
 
-      <p>אלבום בר מצווה</p>
-    </td>
-
-    <td>
+    <!-- תכלת -->
+    <div class="album">
       <a
-        href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+        href="https://www.mybookalbum.co.il/אלבום-בת-מצווה-1"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <img
-          src="https://raw.githubusercontent.com/tal-ramot/avital/main/%D7%91%D7%A8%20%D7%9E%D7%A6%D7%95%D7%95%D7%94%20%D7%9E%D7%95%D7%A8%D7%A9%D7%AA.jpg"
-          alt="אלבום בר מצווה"
+          src="https://avital1712.github.io/avital/תכלת.jpg"
+          alt="אלבום בת מצווה תכלת"
         />
       </a>
+      <p>אלבום בת מצווה</p>
+    </div>
 
-      <p>אלבום בר מצווה</p>
-    </td>
+    <!-- אמבר - חדש -->
+    <div class="album">
+      <a
+        href="https://www.mybookalbum.co.il/חנות/אלבום-אמבר"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="amber.jpg"
+          alt="אלבום בת מצווה אמבר"
+        />
+      </a>
+      <p>אלבום בת מצווה אמבר</p>
+    </div>
 
-  </tr>
-</table>
-    
-    <!-- ליולדת -->
+  </section>
 
-    <table>
-      <tr>
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-ליולדת"
-            target="_blank"
-          >
-            <img
-              class="smaller-image"
-              src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת copy.jpg"
-              alt="אלבום ליולדת לבן"
-            />
-          </a>
+  <!-- בר מצווה -->
 
-          <p>אלבום ליולדת לבן</p>
-        </td>
+  <table>
+    <tr>
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-ליולדת"
-            target="_blank"
-          >
-            <img
-              class="smaller-image"
-              src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת.jpg"
-              alt="אלבום ליולדת לבת"
-            />
-          </a>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+          target="_blank"
+        >
+          <img
+            src="https://yuvaleizik.github.io/website/images/new star.jpg"
+            alt="אלבום בר מצווה"
+          />
+        </a>
+        <p>אלבום בר מצווה</p>
+      </td>
 
-          <p>אלבום ליולדת לבת</p>
-        </td>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+          target="_blank"
+        >
+          <img
+            src="https://yuvaleizik.github.io/website/images/new sky.jpg"
+            alt="אלבום בר מצווה"
+          />
+        </a>
+        <p>אלבום בר מצווה</p>
+      </td>
 
-      </tr>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/חנות/אלבום-ווינר"
+          target="_blank"
+        >
+          <img
+            src="https://avital1712.github.io/avital/בר מצווה ווינר.jpg"
+            alt="אלבום בר מצווה"
+          />
+        </a>
+        <p>אלבום בר מצווה</p>
+      </td>
 
-      <tr>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-בר-מצווה-1"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/tal-ramot/avital/main/%D7%91%D7%A8%20%D7%9E%D7%A6%D7%95%D7%95%D7%94%20%D7%9E%D7%95%D7%A8%D7%A9%D7%AA.jpg"
+            alt="אלבום בר מצווה"
+          />
+        </a>
+        <p>אלבום בר מצווה</p>
+      </td>
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-לגבר"
-            target="_blank"
-          >
-            <img
-              src="https://yuvaleizik.github.io/website/images/new man.jpg"
-              alt="אלבום לגבר"
-            />
-          </a>
+    </tr>
+  </table>
 
-          <p>אלבום לגבר</p>
-        </td>
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/אלבום-לאשה"
-            target="_blank"
-          >
-            <img
-              src="https://yuvaleizik.github.io/website/images/new woman.jpg"
-              alt="אלבום לאשה"
-            />
-          </a>
+  <!-- אלבומים ליולדת -->
 
-          <p>אלבום לאשה</p>
-        </td>
+  <table>
+    <tr>
 
-      </tr>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-ליולדת"
+          target="_blank"
+        >
+          <img
+            class="smaller-image"
+            src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת copy.jpg"
+            alt="אלבום ליולדת לבן"
+          />
+        </a>
+        <p>אלבום ליולדת לבן</p>
+      </td>
 
-      <tr>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-ליולדת"
+          target="_blank"
+        >
+          <img
+            class="smaller-image"
+            src="https://yuvaleizik.github.io/website/images/אלבום ליולדת לבת.jpg"
+            alt="אלבום ליולדת לבת"
+          />
+        </a>
+        <p>אלבום ליולדת לבת</p>
+      </td>
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/עיצוב-הזמנה-לארוע"
-            target="_blank"
-          >
-            <img
-              class="smaller-image"
-              src="https://yuvaleizik.github.io/website/images/דגם ליאן הזמנה לבת מצווה.jpg"
-              alt="עיצוב הזמנה לבת מצווה"
-            />
-          </a>
+    </tr>
 
-          <p>עיצוב הזמנה לבת מצווה</p>
-        </td>
+    <!-- אלבומים לאישה ולגבר -->
 
-        <td>
-          <a
-            href="https://www.mybookalbum.co.il/עיצוב-הזמנה-לארוע"
-            target="_blank"
-          >
-            <img
-              class="smaller-image2"
-              src="https://yuvaleizik.github.io/website/images/דגם ריף הזמנה לבר מצווה.jpg"
-              alt="עיצוב הזמנה לבר מצווה"
-            />
-          </a>
+    <tr>
 
-          <p>עיצוב הזמנה לבר מצווה</p>
-        </td>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-לגבר"
+          target="_blank"
+        >
+          <img
+            src="https://yuvaleizik.github.io/website/images/new man.jpg"
+            alt="אלבום לגבר"
+          />
+        </a>
+        <p>אלבום לגבר</p>
+      </td>
 
-      </tr>
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/אלבום-לאשה"
+          target="_blank"
+        >
+          <img
+            src="https://yuvaleizik.github.io/website/images/new woman.jpg"
+            alt="אלבום לאשה"
+          />
+        </a>
+        <p>אלבום לאשה</p>
+      </td>
 
-    </table>
+    </tr>
 
-    <h3>
-      יש לכם אלבום אחר שאתם רוצים לעשות?
-      <br />
-      שלחו לנו וואצאפ ונשמח לדבר איתכם.
-    </h3>
+    <!-- הזמנות לאירועים -->
 
-  </body>
+    <tr>
+
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/עיצוב-הזמנה-לארוע"
+          target="_blank"
+        >
+          <img
+            class="smaller-image"
+            src="https://yuvaleizik.github.io/website/images/דגם ליאן הזמנה לבת מצווה.jpg"
+            alt="עיצוב הזמנה לבת מצווה"
+          />
+        </a>
+        <p>עיצוב הזמנה לבת מצווה</p>
+      </td>
+
+      <td>
+        <a
+          href="https://www.mybookalbum.co.il/עיצוב-הזמנה-לארוע"
+          target="_blank"
+        >
+          <img
+            class="smaller-image2"
+            src="https://yuvaleizik.github.io/website/images/דגם ריף הזמנה לבר מצווה.jpg"
+            alt="עיצוב הזמנה לבר מצווה"
+          />
+        </a>
+        <p>עיצוב הזמנה לבר מצווה</p>
+      </td>
+
+    </tr>
+  </table>
+
+  <h3>
+    יש לכם אלבום אחר שאתם רוצים לעשות?
+    <br />
+    שלחו לנו וואצאפ ונשמח לדבר איתכם.
+  </h3>
+
+</body>
 </html>
-```
