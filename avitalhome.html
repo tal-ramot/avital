@@ -37,7 +37,7 @@
       height: auto;
       max-width: 100%;
       margin-top: 20px;
-      transition: 0.3s;
+      transition: transform 0.3s;
     }
 
     img:hover {
@@ -60,7 +60,7 @@
       line-height: 1.7;
     }
 
-    /* אלבומי בת מצווה */
+    /* חמישה אלבומי בת מצווה */
     .bat-mitzvah-grid {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -79,6 +79,7 @@
       max-width: 100%;
     }
 
+    /* התאמה לטאבלטים */
     @media (max-width: 900px) {
       .bat-mitzvah-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -99,6 +100,7 @@
       }
     }
 
+    /* התאמה לטלפונים */
     @media (max-width: 420px) {
       .bat-mitzvah-grid {
         gap: 8px;
@@ -145,7 +147,7 @@
     אביטל
   </p>
 
-  <!-- בת מצווה - חמישה אלבומים -->
+  <!-- אלבומי בת מצווה -->
 
   <section class="bat-mitzvah-grid" aria-label="אלבומי בת מצווה">
 
@@ -209,7 +211,7 @@
       <p>אלבום בת מצווה</p>
     </div>
 
-    <!-- אמבר - חדש -->
+    <!-- אמבר - תמונה עם קישור מלא ומתוקן -->
     <div class="album">
       <a
         href="https://www.mybookalbum.co.il/חנות/אלבום-אמבר"
@@ -217,7 +219,7 @@
         rel="noopener noreferrer"
       >
         <img
-          src="amber.jpg"
+          src="https://raw.githubusercontent.com/tal-ramot/avital/main/amber.jpg"
           alt="אלבום בת מצווה אמבר"
         />
       </a>
@@ -227,7 +229,7 @@
   </section>
 
 
-  <!-- בר מצווה -->
+  <!-- אלבומי בר מצווה -->
 
   <table>
     <tr>
